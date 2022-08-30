@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=DynaPuff&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+.body {
+  position: fixed;
+  top: 0px;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #3d2f1da2, #1b2244b6),
+    url("assets/computer1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imgBack {
+  background-color: #3e4358b6;
+  margin: 6% 2%;
+  height: 440px;
+  width: 440px;
+  border-radius: 100%;
+  position: fixed;
   display: flex;
-  flex-direction: column;
+}
+.adiImg {
+  /* position: fixed; */
+  z-index: 0;
+  background-image: url("assets/adipic_circle.png");
+  background-size: cover;
+  height: 420px;
+  width: 420px;
+  margin: auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px solid rgba(196, 149, 89, 0.404);
+  border-radius: 100%;
+}
+
+.intro {
+  position: fixed;
+  color: rgb(255, 255, 255);
+  margin: 10% 30%;
+}
+#top {
+  text-shadow: 2px 2px #faead2e5;
+  color: #fdb54ae5;
+  font-size: 50px;
+  font-family: DynaPuff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+#mid {
   color: white;
+  text-shadow: 2px 2px 7px #879df7;
+
+  font-size: 30px;
+  font-family: Dancing;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  display: block;
+  position: relative;
+  color: white;
+  margin:50% 6% 6% 6% ;
+  min-height: 10000px;
+  z-index: 1;
+  /* position: block; */
+  width: 86%;
+  font-size: 20px;
+  background-color: #879ef76b;
 }
 
-@keyframes App-logo-spin {
+@keyframes glow {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 10px rgb(253, 67, 67);
   }
+
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 10px rgb(247, 150, 150);
   }
 }
