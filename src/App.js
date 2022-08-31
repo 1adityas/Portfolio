@@ -6,7 +6,9 @@ function App() {
     <>
       <div className="body">
         <div className="imgBack">
-          <div className="adiImg"></div>
+          <div className="adiImg">
+            <img id="adii" src={require("./assets/adipic_circle.png")} alt="yoooo" />
+          </div>
         </div>
         <div className="intro">
           <p id="top">Hi There,</p>

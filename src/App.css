@@ -22,16 +22,19 @@
   background-color: #3e4358b6;
   margin: 6% 2%;
   height: 440px;
-  width: 440px;
+  width: auto;
   border-radius: 100%;
   position: fixed;
   display: flex;
 }
+#adii{
+  height: 300px;
+}
 .adiImg {
   /* position: fixed; */
   z-index: 0;
-  background-image: url("assets/adipic_circle.png");
-  background-size: cover;
+  /* background-image: url("assets/adipic_circle.png");
+  background-size: cover; */
   height: 420px;
   width: 420px;
   margin: auto;
@@ -45,6 +48,7 @@
   color: rgb(255, 255, 255);
   margin: 10% 30%;
 }
+
 #top {
   text-shadow: 2px 2px #faead2e5;
   color: #fdb54ae5;
@@ -52,25 +56,27 @@
   font-family: DynaPuff;
   animation: glow 1s ease-in-out infinite alternate;
 }
+
 #mid {
   color: white;
   text-shadow: 2px 2px 7px #879df7;
-
   font-size: 30px;
   font-family: Dancing;
 }
 
 .content {
+  border-radius: 50px;
+  padding: 20px;
   display: block;
   position: relative;
   color: white;
-  margin:50% 6% 6% 6% ;
+  margin: 50% 2% 6% 2%;
   min-height: 10000px;
   z-index: 1;
-  /* position: block; */
-  width: 86%;
   font-size: 20px;
-  background-color: #879ef76b;
+  background-color: #f8e4d641;
+  backdrop-filter: blur(35px);
+  box-shadow: 0 0 1rem 1rem rgba(0, 3, 19, 0.425);
 }
 
 @keyframes glow {
