@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2);
+  /* backgroundcolor: rgba(0, 255, 255, 0.299); */
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 2em;
+  /* margin: 3rem; */
+  grid-auto-flow: dense;
+}
+.content2 {
+  padding: 1em;
+  background-color: rgba(50, 100, 169, 0.149);
+  height: auto;
+  width: 85%;
+
+  border: 1px solid rebeccapurple;
+  /* position: relative; */
+}
+#hey {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 8vw;
+  filter: grayscale(0%);
+  transition: all 0.4s ease-in-out 0s;
+}
+.coverText {
+  text-align: center;
+  font-family: "Secular One";
+  font-size: 2em;
+  padding: 0%;
+  padding-top: 20px;
+  margin: 0%;
+  /* background-color: aqua; */
+}
+.coverBody {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content2 .cover {
+  /* background: rgba(228, 228, 228, 0.7); */
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  /* -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s; */
+  transition: all 0.4s ease-in-out 0s;
+}
+.content2:hover .cover {
+  opacity: 1;
+}
+
+.content2:hover #hey {
+  /* filter: grayscale(100%); */
+  /* opacity: 0.8; */
+}
