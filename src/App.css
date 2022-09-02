@@ -73,7 +73,8 @@
   position: relative;
   color: white;
   margin: 85vh 2% 6% 2%; /*when bring this panel above its not covering aditya pic completely*/
-  min-height: 10000px;
+  min-height: fit-content;
+  padding-bottom: 200px;
   z-index: 1;
   font-size: 20px;
   background-color: #fcf2eb56;

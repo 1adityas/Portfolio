@@ -1,6 +1,8 @@
 import "./App.css";
 import Skills from "./components/skills/Skills.js";
 import Exp from "./components/exp/Exp.js";
+import Timeline from "./components/timeline/Timeline.js";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -87,7 +89,7 @@ function App() {
         Skills
         <Skills></Skills>
         <Exp></Exp>
-
+        <Timeline></Timeline>
       </div>
     </>
   );

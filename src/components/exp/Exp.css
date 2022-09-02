@@ -1,20 +1,24 @@
-.gridTop{
-    display: grid;
-    margin: auto ;
+.gridTop {
+  display: grid;
+  margin: auto;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
-  grid-template-rows: repeat(8, 1fr);
-/* grid-auto-rows: min-content; */
+  grid-template-rows: min-content 1fr; /*wow*/
+  /* grid-auto-rows: min-content; */
 }
-
+.topHeading {
+  grid-column: 2/2;
+  grid-row-start: 1;
+}
 .card {
   margin: 20px;
   /* height: 800px; */
   width: 30vw;
-  height: fit-content;/*its very usefull*/
+  height: fit-content; /*its very usefull*/
   background-color: rgba(250, 235, 215, 0.474);
   padding-bottom: 20px;
-    /* grid-row: 2/minmax(min-content, max-content); */
+
+  /* grid-row: 2/minmax(min-content, max-content); */
 }
 .topic {
   font-size: 2em;
@@ -42,18 +46,27 @@
 /* #g2{
     grid-row-start: 2;
 } */
-#gd1{
-    grid-column:1/1;
-    grid-row-start: 1;
-    grid-row-end:8;
-    min-width: 0;
-    min-height: 0
-
-    
+#gd1 {
+  grid-column: 1/1;
+  grid-row-start: 1;
+  grid-row-end: 8; /*here its broken, if i put fit-content ... etc*/
+  margin: 0px auto;
 }
-#gd2{
-    grid-column:2/2;
-    grid-row-start: 2;
-    grid-row-end:fit-content;
-
+#gd2 {
+  grid-column: 2/2;
+  grid-row-start: 2;
+  grid-row-end: fit-content;
+  margin: 0px auto;
+}
+#gd3 {
+  grid-column: 1/1;
+  grid-row-start: 9;
+  grid-row-end: fit-content;
+  margin: 0px auto;
+}
+#gd4 {
+  grid-column: 2/2;
+  grid-row-start: 10;
+  grid-row-end: fit-content;
+  margin: 0px auto;
 }

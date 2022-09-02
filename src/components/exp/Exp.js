@@ -1,43 +1,28 @@
 import React from "react";
 import "./Exp.css";
+import data from "./expData.js";
 
 function Exp() {
+  const gridItems = data.map((item) => {
+    return (
+      <div className="card" id={item.id}>
+        <p className="topic">{item.heading}</p>
+        <hr className="topLine" />
+        <img
+          src={require(`../../assets/${item.img}`)}
+          alt="yo"
+          className="bodyImg"
+        />
+        <div className="bodyText">{item.body}</div>
+      </div>
+    );
+  });
   return (
     <>
       <hr></hr>
       <div className="gridTop">
-      <p className="topHeading">Projects</p>
-
-        <div className="card" id="gd1">
-          <p className="topic">SRM Mate flutter app</p>
-          <hr className="topLine" />
-          <img
-            src={require("../../assets/srmmate.png")}
-            alt="yo"
-            className="bodyImg"
-          />
-          <div className="bodyText">
-            A lean and elegant utility to provide students at SRM-IST, NCR with
-            access to class notes, reference books and more in just few taps.
-            Built using Flutter, SRM Mate works on Android, iOS, and Windows and
-            offers steady performance.
-          </div>
-        </div>
-        <div className="card" id="gd2">
-          <p className="topic">SRM Mate flutter app</p>
-          <hr className="topLine" />
-          <img
-            src={require("../../assets/srmmate.png")}
-            alt="yo"
-            className="bodyImg"
-          />
-          <div className="bodyText">
-            A lean and elegant utility to provide students at SRM-IST, NCR with
-            access to class notes, reference books and more in just few taps.
-            Built using Flutter, SRM Mate works on Android, iOS, and Windows and
-            offers steady performance.
-          </div>
-        </div>
+        <p className="topHeading">Projects</p>
+        {gridItems}
       </div>
       <hr></hr>
     </>
