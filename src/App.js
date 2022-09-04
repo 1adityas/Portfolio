@@ -86,7 +86,7 @@ function App() {
           </li>
         </ul>
         <hr className="line1" />
-        Skills
+        <p className="topText">Skills</p>
         <Skills></Skills>
         <Exp></Exp>
         <Timeline></Timeline>

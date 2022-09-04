@@ -5,6 +5,7 @@
   height: 100%;
   width: 100%;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 .body {
   position: fixed;
   top: 0px;
@@ -18,7 +19,11 @@
   background-size: cover;
   background-position: center bottom;
 }
-
+.topText {
+  font-size: 3em ;
+  font-family: 'Bree Serif';
+  margin: auto;
+text-align: center;}
 .flex {
   margin-top: 50px;
   margin-left: 30px;
