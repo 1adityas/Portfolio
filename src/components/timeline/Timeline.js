@@ -29,11 +29,11 @@ function Timeline() {
           return (
             <VerticalTimelineElement
               key={element.key}
-              date={element.date}       
+              date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-              contentStyle={{backgroundColor:"rgba(171,150,219,.35)"}}
+              contentStyle={{ backgroundColor: "rgba(171,150,219,.35)" }}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}

@@ -18,6 +18,6 @@ function Skills() {
     <>
       <div className="grid">{gridItems}</div>
     </>
-  );
+  );  
 }
 export default Skills;
