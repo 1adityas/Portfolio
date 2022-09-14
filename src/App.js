@@ -38,53 +38,57 @@ function App() {
         </div>
       </div>
       <div class="content">
-        <ul className="contacts">
-          <li>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="fa fa-facebook">
-                <FontAwesomeIcon icon={["fab", "facebook-f"]}></FontAwesomeIcon>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="fa fa-twitter">
-                <FontAwesomeIcon icon="fa-brands fa-twitter" />
-                {/* <FontAwesomeIcon icon={["fab", "tml5"]} /> */}
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="fa fa-google-plus">
-                <FontAwesomeIcon icon={["fab", "github"]} />
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span class="fa fa-linkedin">
-                <FontAwesomeIcon icon={["fab", "linkedin"]} />
-              </span>
-            </a>
-          </li>
-        </ul>
+        <div className="table">
+          <ul className="contacts">
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-facebook">
+                  <FontAwesomeIcon
+                    icon={["fab", "facebook-f"]}
+                  ></FontAwesomeIcon>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-twitter">
+                  <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                  {/* <FontAwesomeIcon icon={["fab", "tml5"]} /> */}
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-google-plus">
+                  <FontAwesomeIcon icon={["fab", "github"]} />
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-linkedin">
+                  <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <hr className="line1" />
         <p className="topText">Skills</p>
         <Skills></Skills>

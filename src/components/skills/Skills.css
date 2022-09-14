@@ -3,6 +3,7 @@
 .grid {
   width: auto;
   display: grid;
+  align-self: center;
   grid-template-columns: repeat(auto-fit, 15vw);
   grid-template-rows: repeat(2);
   /* backgroundcolor: rgba(0, 255, 255, 0.299); */
@@ -16,6 +17,7 @@
 .content2 {
   
   /* grid-row:   ; */
+  margin: 0px auto;
   padding: 1em;
   background-color: rgba(50, 100, 169, 0.149);
   height: auto;

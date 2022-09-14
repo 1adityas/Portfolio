@@ -28,12 +28,14 @@ text-align: center;
 .flex {
   margin-top: 50px;
   margin-left: 30px;
+  margin-right: 30px;
   display: flex;
   /* margin-right: 35vh; */
   gap: 30px;
+  align-items: center;
 }
 .adiPhoto {
-  height: 300px;
+  height: auto;
   /* width: 400px; */
 }
 
@@ -53,10 +55,12 @@ text-align: center;
 
 .intro {
   /* position: fixed; */
+  /* margin-top: 5vw; */
   color: rgb(255, 255, 255);
+  
 }
-
 #top {
+  margin: 0px ;
   text-shadow: 2px 2px #faead2e5;
   color: #fdb54ae5;
   font-size: 50px;
@@ -71,7 +75,8 @@ text-align: center;
   font-family: Dancing;
 }
 #body{
-  width: max(37vw,400px);
+  width: max(37vw,300px);
+  padding-right: 50px;
 }
 .content {
   border-radius: 50px;
@@ -89,9 +94,15 @@ text-align: center;
   box-shadow: 0 0 1rem 1rem rgba(0, 3, 19, 0.425);
 }
 
+.table{
+  display: table;
+  margin: 0px auto;
+}
 .contacts {
   top: 1vh;
-  margin-left: 35vw;
+  display: solid;/*god dam it .. its like magic*/
+  /* display: inline; */
+  /* margin-left: 35vw; */
   /*https://codepen.io/ephs23/pen/NeQZGx maybe use this.  */
 }
 
@@ -104,9 +115,9 @@ ul {
 ul li {
   position: relative;
   list-style: none;
-  width: 6%;
+  width: 3rem;
   /* height: 50px; */
-  margin: 0 30px;
+  margin: 0 1.7vw;
   transform: rotate(-0deg) skew(0deg);
   background-color: #fffcfa38;
 }
@@ -175,4 +186,34 @@ ul li:hover span:nth-child(1) {
   to {
     text-shadow: 0 0 10px rgb(247, 150, 150);
   }
+}
+
+@media only screen and (max-width: 650px) {
+  .flex{
+    flex-direction: column;
+  }
+  #body{
+    width: auto;
+  }
+  .flex{
+    gap:40px;
+  }
+  #top{
+    text-align: center;
+  }
+  #mid{
+    text-align: center;
+  }
+  #body{
+    padding-right: 0%;
+    text-align: center;
+  }
+}
+@media only screen and (max-height: 670px) {
+  .flex{
+    gap:0px;
+  }
+  /* .content{
+    margin:90vh 2% 6% 2%;
+  } */
 }
