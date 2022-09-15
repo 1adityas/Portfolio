@@ -55,7 +55,7 @@ text-align: center;
 
 .intro {
   /* position: fixed; */
-  /* margin-top: 5vw; */
+  margin-top: 6vw;
   color: rgb(255, 255, 255);
   
 }
@@ -84,7 +84,7 @@ text-align: center;
   display: block;
   position: relative;
   color: white;
-  margin: 85vh 2% 6% 2%; /*when bring this panel above its not covering aditya pic completely*/
+  margin: 86vh 2% 6% 2%; /*when bring this panel above its not covering aditya pic completely*/
   min-height: fit-content;
   padding-bottom: 200px;
   z-index: 1;
@@ -209,11 +209,18 @@ ul li:hover span:nth-child(1) {
     text-align: center;
   }
 }
-@media only screen and (max-height: 670px) {
+@media only screen and (max-height: 700px) {
   .flex{
     gap:0px;
   }
+  .intro{margin-top: 0px;}
   /* .content{
     margin:90vh 2% 6% 2%;
+  } */
+}
+@media only screen and (max-height: 900px) {
+  
+  /* .content{
+    margin:88vh 2% 6% 2%;
   } */
 }
