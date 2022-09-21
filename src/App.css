@@ -20,10 +20,10 @@
   background-position: center bottom;
 }
 .topText {
-  font-size: 3em ;
-  font-family: 'Bree Serif';
+  font-size: 3em;
+  font-family: "Bree Serif";
   margin: auto;
-text-align: center;
+  text-align: center;
 }
 .flex {
   margin-top: 50px;
@@ -57,10 +57,10 @@ text-align: center;
   /* position: fixed; */
   margin-top: 6vw;
   color: rgb(255, 255, 255);
-  
+  padding-left: 2%;
 }
 #top {
-  margin: 0px ;
+  margin: 0px;
   text-shadow: 2px 2px #faead2e5;
   color: #fdb54ae5;
   font-size: 50px;
@@ -74,9 +74,8 @@ text-align: center;
   font-size: 30px;
   font-family: Dancing;
 }
-#body{
-  width: max(37vw,300px);
-  padding-right: 50px;
+#body {
+  width: max(37vw, 300px);
 }
 .content {
   border-radius: 50px;
@@ -94,13 +93,13 @@ text-align: center;
   box-shadow: 0 0 1rem 1rem rgba(0, 3, 19, 0.425);
 }
 
-.table{
+.table {
   display: table;
   margin: 0px auto;
 }
 .contacts {
   top: 1vh;
-  display: solid;/*god dam it .. its like magic*/
+  display: solid; /*god dam it .. its like magic*/
   /* display: inline; */
   /* margin-left: 35vw; */
   /*https://codepen.io/ephs23/pen/NeQZGx maybe use this.  */
@@ -121,8 +120,8 @@ ul li {
   transform: rotate(-0deg) skew(0deg);
   background-color: #fffcfa38;
 }
-ul li::after{
-  content:'';
+ul li::after {
+  content: "";
   display: block;
   padding-bottom: 100%;
 }
@@ -189,37 +188,38 @@ ul li:hover span:nth-child(1) {
 }
 
 @media only screen and (max-width: 650px) {
-  .flex{
+  .flex {
     flex-direction: column;
   }
-  #body{
+  #body {
     width: auto;
   }
-  .flex{
-    gap:40px;
+  .flex {
+    gap: 40px;
   }
-  #top{
+  #top {
     text-align: center;
   }
-  #mid{
+  #mid {
     text-align: center;
   }
-  #body{
+  #body {
     padding-right: 0%;
     text-align: center;
   }
 }
 @media only screen and (max-height: 700px) {
-  .flex{
-    gap:0px;
+  .flex {
+    gap: 0px;
   }
-  .intro{margin-top: 0px;}
+  .intro {
+    margin-top: 0px;
+  }
   /* .content{
     margin:90vh 2% 6% 2%;
   } */
 }
 @media only screen and (max-height: 900px) {
-  
   /* .content{
     margin:88vh 2% 6% 2%;
   } */
