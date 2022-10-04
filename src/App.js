@@ -2,7 +2,7 @@ import "./App.css";
 import Skills from "./components/skills/Skills.js";
 import Exp from "./components/exp/Exp.js";
 import Timeline from "./components/timeline/Timeline.js";
-
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,12 +10,10 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faHtml5,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
-import {faEnvelopesBulk} from "@fortawesome/free-regular-svg-icons";
 
-library.add(faFacebookF, faTelegram, faTwitter, faGithub, faLinkedin, faHtml5);
+library.add(faFacebookF, faTelegram, faTwitter, faGithub, faLinkedin);
 function App() {
   return (
     <>
@@ -43,7 +41,7 @@ function App() {
         <div className="table">
           <ul className="contacts">
             <li>
-              <a href="">
+              <a href="https://t.me/Adi_p1">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -54,15 +52,13 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=1adityapsingh@gmail.com">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span class="fa fa-twitter">
-                  <FontAwesomeIcon 
-                  icon="fa-solid fa-envelopes-bulk" />
-                  {/* <FontAwesomeIcon icon={["fab", "tml5"]} /> */}
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </span>
               </a>
             </li>
@@ -81,7 +77,7 @@ function App() {
               <a href="https://www.linkedin.com/in/aditya-pratap-singh-7488471b0/">
                 <span></span>
                 <span></span>
-                <span></span>
+                <span></span> 
                 <span></span>
                 <span class="fa fa-linkedin">
                   <FontAwesomeIcon icon={["fab", "linkedin"]} />
