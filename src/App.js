@@ -11,9 +11,11 @@ import {
   faGithub,
   faLinkedin,
   faHtml5,
+  faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import {faEnvelopesBulk} from "@fortawesome/free-regular-svg-icons";
 
-library.add(faFacebookF, faTwitter, faGithub, faLinkedin, faHtml5);
+library.add(faFacebookF, faTelegram, faTwitter, faGithub, faLinkedin, faHtml5);
 function App() {
   return (
     <>
@@ -41,15 +43,13 @@ function App() {
         <div className="table">
           <ul className="contacts">
             <li>
-              <a href="#">
+              <a href="">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span class="fa fa-facebook">
-                  <FontAwesomeIcon
-                    icon={["fab", "facebook-f"]}
-                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon icon="fa-brands fa-telegram" />
                 </span>
               </a>
             </li>
@@ -60,13 +60,14 @@ function App() {
                 <span></span>
                 <span></span>
                 <span class="fa fa-twitter">
-                  <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                  <FontAwesomeIcon 
+                  icon="fa-solid fa-envelopes-bulk" />
                   {/* <FontAwesomeIcon icon={["fab", "tml5"]} /> */}
                 </span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/1adityas">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -77,7 +78,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/aditya-pratap-singh-7488471b0/">
                 <span></span>
                 <span></span>
                 <span></span>
